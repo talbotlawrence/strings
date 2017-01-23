@@ -7,12 +7,18 @@
 console.log("hi");
 var userInput;
 
-
 document.getElementById("pleaseSubmit")
     .addEventListener("click", function(event){
      userInput = document.getElementById("textVal").value;
      console.log("userInput", userInput);
 });
+
+// var textRegex = /[0-9]/;
+// if (userInput.value.match(textRegex)) {
+// 	alert("Please do not enter numbers");
+// 	location.reload();
+// }
+
 
 
 
