@@ -1,22 +1,39 @@
-// function validateText(text) {
-// 	var getClass = document.getElementsByClassName("textVal")[0].value;
-// 	console.log("getClass", getClass);
-// 	var textRegex = /[A-Z][a-z]/;
-// 	var testInput = getClass.search(textRegex);
-// }
 console.log("hi");
+
+//MAKE MORE FUNCTIONS!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
 var userInput;
 
-document.getElementById("pleaseSubmit")
+function getUserInput() {
+
+}
+	document.getElementById("pleaseSubmit")
     .addEventListener("click", function(event){
      userInput = document.getElementById("textVal").value;
+	     
      console.log("userInput", userInput);
+})
+
+
+if (isNaN(parseInt(userInput))) {
+			alert("Please do not enter numbers");
+			userInput = "";
+}
+
+
+//Enter button will submit
+document.getElementById("textVal").addEventListener("keyup", function(e) {
+    if (e.keyCode == 13) {
+        document.getElementById("pleaseSubmit").click();
+    }   
 });
 
+
 // var textRegex = /[0-9]/;
-// if (userInput.value.match(textRegex)) {
+// if (textRegex.test(userInput)) {
 // 	alert("Please do not enter numbers");
-// 	location.reload();
+// 	window.location.reload();
+	break;
 // }
 
 
